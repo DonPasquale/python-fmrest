@@ -271,7 +271,7 @@ class Server(object):
             request_data['portalData'] = portals
 
         if date_format:
-            request_data['dateFormat'] = self._date_format_for_keyword(date_format)
+            request_data['dateFormats'] = self._date_format_for_keyword(date_format)
 
         # build script param object in FMSDAPI style
         script_params = build_script_params(scripts) if scripts else None
@@ -348,7 +348,7 @@ class Server(object):
             request_data['portalData'] = portals
 
         if date_format:
-            request_data['dateFormat'] = self._date_format_for_keyword(date_format)
+            request_data['dateFormats'] = self._date_format_for_keyword(date_format)
 
         # build script param object in FMSDAPI style
         script_params = build_script_params(scripts) if scripts else None
